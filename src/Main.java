@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        printIsLeapYear(2024);
         System.out.println("Homework11");
         System.out.println("Задача 1");
         int[] year2 = {2021, 2006, 3000, 2024};
@@ -12,7 +13,6 @@ public class Main {
             }
         }
         System.out.println("Задача 1.2");
-        printIsLeapYear(2006);
     }
 
     public static void printIsLeapYear(int year) {
@@ -41,16 +41,17 @@ public class Main {
 
         }
     }
-            public static int calculateDeliveryDays(int distance){
+
+    public static int calculateDeliveryDays(int distance) {
 
         int resultDays = 1;
         if (distance <= 20) {
             System.out.println("Потребуется на доставку " + resultDays + " день");
             resultDays++;
         }
-        if (distance  >= 21 && distance < 60) {
-            System.out.printf("Потребуется на доставку %s%n дня", resultDays +=2);
-            resultDays ++;
+        if (distance >= 21 && distance < 60) {
+            System.out.printf("Потребуется на доставку %s%n дня", resultDays += 2);
+            resultDays++;
         }
         if (distance >= 100) {
             System.out.println("Delivery not possible");
