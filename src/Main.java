@@ -3,7 +3,7 @@ public class Main {
         printIsLeapYear(2025);
         printValidTypeInfo(0, 2022);
         printValidTypeInfo(1, 2009);
-        calculateDeliveryDays(65);
+        calculateDeliveryDays(101);
     }
     public static void printIsLeapYear(int year) {
         if (year > 1584 && (year % 4 == 0 || year % 100 != 0 && year % 400 == 0)) {
